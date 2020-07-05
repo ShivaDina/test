@@ -1,0 +1,398 @@
+		header{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			padding: 30px 80px;
+			color: #fff;
+			background: #000000;
+		}
+		.header-center ul{
+			list-style: none;
+		}
+		.header-center ul li{
+			display: inline-block;
+			margin: 0 15px;
+		}
+		.header-center ul li a{
+			text-decoration:none;
+			color: #FFFFFF;
+			cursor: pointer;
+			font-weight: bold;
+			font-size: 30px;
+		}
+		.header-left{
+			font-size: 45px;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		}
+		.mobile-menu {
+			float: right;
+			display: none;
+			padding: 18px;
+		}
+		.mobile-menu:hover {
+			cursor: pointer;
+		}
+		body{
+			background: #FFFFFF;
+		}
+		
+		img.tengah{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@media (max-width: 1200px){
+			header{
+				padding: 40px 60px;
+			}
+			body{
+				padding: 0 5%;
+			}
+		}
+		@media (max-width: 1000px){
+			header{
+				align-items: flex-start;
+			}
+			header > div{
+				margin: 12px 0;
+			}
+			.header-center ul li{
+				margin: 0 15px 0 0;
+			}
+		}
+		@media (max-width: 600px){
+			body{
+				padding: 0 10px;
+			}
+			.header-left{
+				margin-top: 0;
+			}
+			header{
+				padding: 30px;
+			}
+		}
+		.blog {
+	float:Center;
+}
+ 
+.conteudo {
+	width:600px;
+	padding:0px;
+	margin:0px auto;
+	background: #F5F5F5;
+}
+p{
+text-decoration: underline;
+font-size:50px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: bold;
+color: #2F4F4F;
+}
+img.gambar{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 300px;
+	width: 500px;
+	border: 3px solid black;
+}
+
+.isi{
+	font-size: 25px;
+	color: #000000;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+.isi-1{
+	font-size: 20px;
+	color: #000000;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-align: center;
+	line-height: 35px;
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+footer{
+	position:relative;
+	background:#DCDCDC;
+	height:40px;
+	line-height:40px;
+	color:#000000;
+	text-align:center;
+}
+.responsive-slider { 
+	border: 10px solid #efefef; 
+	position: relative; 
+	overflow: hidden; 
+	background: #efefef;
+}
+ 
+.responsive-slider { 
+	margin:20px auto;
+	width: 768px;
+	height: 450px; 
+}
+ 
+.isi-slider img { 
+	width: 768px;
+	height: 450px; 
+	float: left;
+}
+ 
+.isi-slider { 
+	position: absolute; 
+	width:3900px;  
+ 
+	/*pengaturan durasi lama tampil gambar bisa di atur di bawah ini*/
+	animation-name:slider;
+	animation-duration:16s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count:infinite;
+	-webkit-animation-name:slider;
+	-webkit-animation-duration:16s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-name:slider;
+	-moz-animation-duration:16s;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count:infinite;
+	-o-animation-name:slider;
+	-o-animation-duration:16s;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-iteration-count:infinite;
+}
+ 
+ 
+/*saat gambar di hover oleh cursor mouse maka berhenti slide*/
+.isi-slider:hover { 
+	-webkit-animation-play-state:paused; 
+	-moz-animation-play-state:paused; 
+	-o-animation-play-state:paused; 
+	animation-play-state:paused; 
+}
+ 
+.isi-slider img { 
+	float: right; 
+}
+ 
+.responsive-slider:after { 
+	font-size: 150px; 
+	position: absolute; 
+	z-index: 12; 
+	color: rgba(255,255,255, 0); 
+	left: 300px; top: 80px; 
+	-webkit-transition: 1s all ease-in-out; 
+	-moz-transition: 1s all ease-in-out; 
+	transition: 1s all ease-in-out; 
+}
+ 
+.responsive-slider:hover:after { 
+	color: rgba(255,255,255, 0.6);  
+}
+ 
+ 
+ 
+@-moz-keyframes slider {     
+	0% {
+		left: 0; opacity: 0; 
+	}     
+	2% {
+		opacity: 1; 
+	}     
+	20% {
+		left: 0; opacity: 1; 
+	}     
+	21% {
+		opacity: 0; 
+	}     
+	24% {
+		opacity: 0; 
+	}     
+	25% {
+		left: -768px; opacity: 1; 
+	}       
+	45% {
+		left: -768px; opacity: 1; 
+	}     
+	46% {
+		opacity: 0; 
+	}     
+	48% {
+		opacity: 0; 
+	}     
+	50% {
+		left: -1536px; opacity: 1; 
+	}     
+	70% {
+		left: -1536px; opacity: 1; 
+	}     
+	72% {
+		opacity: 0; 
+	}     
+	74% {
+		opacity: 0; 
+	}    
+	75% {
+		left: -2304px; opacity: 1; 
+	}   	
+	95% {
+		left: -2304px; opacity: 1; 
+	}   	
+	97% { 
+		left: -2304px; opacity: 0;
+	}   	
+	100% {
+		left: 0; opacity: 0; 
+	}
+} 
+ 
+@-webkit-keyframes slider {     
+	0% {
+		left: 0; opacity: 0; 
+	}     
+	2% {
+		opacity: 1; 
+	}     
+	20% {
+		left: 0; opacity: 1; 
+	}     
+	21% {
+		opacity: 0; 
+	}     
+	24% {
+		opacity: 0; 
+	}     
+	25% {
+		left: -768px; opacity: 1; 
+	}       
+	45% {
+		left: -768px; opacity: 1; 
+	}     
+	46% {
+		opacity: 0; 
+	}     
+	48% {
+		opacity: 0; 
+	}     
+	50% {
+		left: -1536px; opacity: 1; 
+	}     
+	70% {
+		left: -1536px; opacity: 1; 
+	}     
+	72% {
+		opacity: 0; 
+	}     
+	74% {
+		opacity: 0; 
+	}    
+	75% {
+		left: -2304px; opacity: 1; 
+	}   	
+	95% {
+		left: -2304px; opacity: 1; 
+	}   	
+	97% { 
+		left: -2304px; opacity: 0;
+	}   	
+	100% {
+		left: 0; opacity: 0; 
+	}
+} 
+ 
+ 
+@keyframes slider {     
+	0% {
+		left: 0; opacity: 0; 
+	}     
+	2% {
+		opacity: 1; 
+	}     
+	20% {
+		left: 0; opacity: 1; 
+	}     
+	21% {
+		opacity: 0; 
+	}     
+	24% {
+		opacity: 0; 
+	}     
+	25% {
+		left: -768px; opacity: 1; 
+	}     
+	45% {
+		left: -768px; opacity: 1; 
+	}     
+	46% {
+		opacity: 0; 
+	}     
+	48% {
+		opacity: 0; 
+	}     
+	50% {
+		left: -1536px; opacity: 1; 
+	}     
+	70% {
+		left: -1536px; opacity: 1; 
+	}     
+	72% {
+		opacity: 0; 
+	}     
+	74% {
+		opacity: 0; 
+	}    
+	75% {
+		left: -2304px; opacity: 1; 
+	}   	
+	95% {
+		left: -2304px; opacity: 1; 
+	}   	
+	97% { 
+		left: -2304px; opacity: 0; 
+	} 
+ 
+	100% {
+		left: 0; opacity: 0; 
+	}
+}
+.tulisan_contact{
+	text-align: center;
+	/*membuat semua huruf menjadi kapital*/
+	text-transform: uppercase;
+}
+ 
+.kotak_contact{
+	width: 350px;
+	background: white;
+	/*meletakkan form ke tengah*/
+	margin: 80px auto;
+	padding: 30px 20px;
+}
+ 
+label{
+	font-size: 11pt;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+}
+ 
+.form_contact{
+	/*membuat lebar form penuh*/
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+}
+ 
+.tombol_kirim{
+	background:#5F9EA0;
+	color: white;
+	font-size: 11pt;
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+}
